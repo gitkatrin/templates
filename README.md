@@ -14,3 +14,8 @@ In this repository are some useful templates.
   
 **Merge data:**
   - [merge two csv files](https://github.com/gitkatrin/templates/blob/master/merge_data/merge_csv.py)
+
+**Others:**
+  - [Compare image names of images in a folder with image names in csv file](https://github.com/gitkatrin/templates/blob/master/others/compare_image_names_with_csv_file.py)
+  - [Write the pixel values of images in a folder into a csv file](https://github.com/gitkatrin/templates/blob/master/others/pixel_values_in_csv.py)
+  
