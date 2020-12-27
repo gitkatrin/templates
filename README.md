@@ -4,7 +4,7 @@ In this repository are some useful templates.
 ***
 
 **Edit images:**
-  - [convert images from RGB to grayscale](https://github.com/gitkatrin/templates/blob/master/rgb2grayscale.py)
+  - [convert images from RGB to grayscale](https://github.com/gitkatrin/templates/blob/master/edit_images/rgb2grayscale.py)
 
 
 **Convert to different file format:**
