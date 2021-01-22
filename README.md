@@ -1,6 +1,6 @@
 # templates
 
-In this repository are some useful templates.
+In this repository are some useful templates for python programming.
 ***
 
 **Edit images:**
