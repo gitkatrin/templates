@@ -1,6 +1,6 @@
 # templates
 
-In this repository are some useful templates for python programming.
+In this repository are some useful templates for python programming and some informative websites.
 ***
 
 **Edit images:**
@@ -19,4 +19,9 @@ In this repository are some useful templates for python programming.
   - [Compare image names of images in a folder with image names in csv file](https://github.com/gitkatrin/templates/blob/master/others/compare_image_names_with_csv_file.py)
   - [Write the pixel values of images in a folder into a csv file](https://github.com/gitkatrin/templates/blob/master/others/pixel_values_in_csv.py)
   - [Activate the OV580 camera](https://github.com/gitkatrin/templates/blob/master/others/OV580example.py)
+
+***
+
+**Websites:**
+- [Plotting demos](https://academo.org/demos/)
   
