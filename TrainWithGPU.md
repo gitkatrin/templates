@@ -33,7 +33,7 @@
   - ``` sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*```
 5. sudo apt install nvidia-cuda-toolkit
 6. Separates **cublas lib** Paket installieren und manuell zu installieren:
-  - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/libcublas10_10.1.0.105-1_amd64. deb 227
+  - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/libcublas10_10.1.0.105-1_amd64.deb
   - ```sudo dpkg -i libcublas10_10.1.0.105-1_amd64.deb```
 
 
