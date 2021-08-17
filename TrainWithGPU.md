@@ -39,6 +39,9 @@
   - oder kopieren:
     - Terminal aus folgendem Ordner öffnen: /usr/loal/cuda-10.2/lib64
     - ```sudo cp /libcublas.so.10 /usr/local/cuda-10.1/lib64/```
+  - oder:
+    - im Terminal: ´´´cd /´´´ um in ~/.bashrc zu kommen
+    - ´´´export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}´´´
  
 
 
