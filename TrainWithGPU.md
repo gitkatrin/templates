@@ -24,7 +24,8 @@
 
 # Ablauf
 1. [NVIDIA Treiber](https://www.nvidia.com/download/index.aspx?lang=en-us) installieren
-2. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
+  - oder so: https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04
+3. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
   - den Anweisungen folgen und als letzten Befehl nicht ```sudo apt-get -y install cuda``` ausführen, sondern: ```sudo apt install cuda-10.1```
 4. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren
   - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
