@@ -51,13 +51,13 @@ sudo apt-get install cuda
 
 - REMOVE -----------------------------------------------
 # Remove existing CuDA versions
-sudo apt --purge remove "cublas*" "cuda*"
-sudo apt --purge remove "nvidia*"
-rm -rf /usr/local/cuda*
-sudo apt-get autoremove && sudo apt-get autoclean
+1. ```sudo apt --purge remove "cublas*" "cuda*"```
+2. ```sudo apt --purge remove "nvidia*"```
+3. ```rm -rf /usr/local/cuda*```
+4. ```sudo apt-get autoremove && sudo apt-get autoclean```
 
 # Reboot to remove cached files 
-reboot
+5. ```reboot```
 
 /usr/local/cuda/bin/cuda-uninstaller
 rm -rf /usr/local/cuda-10.0
