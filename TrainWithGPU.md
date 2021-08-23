@@ -24,7 +24,10 @@
 
 # Ablauf
 1. [NVIDIA Treiber](https://www.nvidia.com/download/index.aspx?lang=en-us) installieren
-  - oder so: https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04
+    - oder so: https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04
+      - ```sudo apt install nvidia-driver-455```
+      - ```sudo shutdown -r now```
+
 3. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
   - den Anweisungen folgen und als letzten Befehl nicht ```sudo apt-get -y install cuda``` ausführen, sondern: ```sudo apt install cuda-10.1```
 4. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren
