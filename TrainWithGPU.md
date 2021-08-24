@@ -12,7 +12,7 @@
   - ```nvidia-smi```  
 - **cuDNN** (Version: ) brauche 7.6
   - ```einfügen```
-- **nvcc** (Version: V9.1.85)
+- **nvcc (Nvidia Toolkit)** (Version: V9.1.85)
   -  ```nvcc  --version```
 - **Tensorflow, Tensorflow-gpu** (Version: 2.3.1)
   - ```pip list | grep tensorflow```  
