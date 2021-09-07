@@ -29,29 +29,29 @@
       - ```sudo shutdown -r now```
 
 3. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
-  - die .run Datei runterladen
-  - Nvidia Driver nicht mit installieren
-  - Nach Installation PATH ändern und Umgebungsvariablen ändern
-    - ```export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}```
-    - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\```  
-        ```${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
+    - die .run Datei runterladen
+    - Nvidia Driver nicht mit installieren
+    - Nach Installation PATH ändern und Umgebungsvariablen ändern
+      - ```export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}```
+      - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\```  
+          ```${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
 
 4. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren https://gist.github.com/matheustguimaraes/43e0b65aa534db4df2918f835b9b361d
-  - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
-  - ``` sudo cp cuda/include/cudnn*.h /usr/local/cuda/include```
-  - ``` sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64```
-  - ``` sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*```
+    - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
+    - ``` sudo cp cuda/include/cudnn*.h /usr/local/cuda/include```
+    - ``` sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64```
+    - ``` sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*```
 5. sudo apt install nvidia-cuda-toolkit
 6. Separates **cublas lib** Paket installieren und manuell zu installieren:
   - entweder download:
-    - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/libcublas10_10.1.0.105-1_amd64.deb
-    - ```sudo dpkg -i libcublas10_10.1.0.105-1_amd64.deb```
-  - oder kopieren:
-    - Terminal aus folgendem Ordner öffnen: /usr/loal/cuda-10.2/lib64
-    - ```sudo cp /libcublas.so.10 /usr/local/cuda-10.1/lib64/```
-  - oder:
-    - im Terminal: ```cd /``` um in ~/.bashrc zu kommen
-    - ```export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
+      - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/libcublas10_10.1.0.105-1_amd64.deb
+      - ```sudo dpkg -i libcublas10_10.1.0.105-1_amd64.deb```
+    - oder kopieren:
+      - Terminal aus folgendem Ordner öffnen: /usr/loal/cuda-10.2/lib64
+      - ```sudo cp /libcublas.so.10 /usr/local/cuda-10.1/lib64/```
+    - oder:
+      - im Terminal: ```cd /``` um in ~/.bashrc zu kommen
+      - ```export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
  
 
 
