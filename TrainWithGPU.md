@@ -29,6 +29,13 @@
       - ```sudo shutdown -r now```
 
 3. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
+  - die .run Datei runterladen
+  - Nvidia Driver nicht mit installieren
+  - Nach Installation PATH ändern und Umgebungsvariablen ändern
+    - ```export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}```
+    - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\```  
+        ```${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
+
   - den Anweisungen folgen und als letzten Befehl nicht ```sudo apt-get -y install cuda``` ausführen, sondern: ```sudo apt install cuda-10.1```
 4. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren https://gist.github.com/matheustguimaraes/43e0b65aa534db4df2918f835b9b361d
   - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
