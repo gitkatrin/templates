@@ -11,8 +11,6 @@
   - ```modinfo nvidia | grep "^version:" | sed 's/^version: *//;' ```
 - **CUDA** (Version: 11.4) brauche 10.1
   - ```nvidia-smi```  
-- **cuDNN** (Version: ) brauche 7.6
-  - ```einfügen```
 - **nvcc (Nvidia Toolkit)** (Version: V9.1.85)
   -  ```nvcc  --version```
 - **Tensorflow, Tensorflow-gpu** (Version: 2.3.1)
@@ -21,11 +19,11 @@
   - ```python3 --version```
 
 # Ablauf
-1. NVIDIA Treiber installieren/aktivieren
+1. **NVIDIA Treiber installieren/aktivieren**
     - [installieren](https://www.nvidia.com/download/index.aspx?lang=en-us)
     - aktivieren unter: Anwendungen & Aktualisierungen > Zusätzliche Treiber > NVIDIA driver metapackage nvidia-driver-470...
  
-2. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
+2. **[CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren**
     - die .run Datei runterladen
     - Nvidia Driver nicht mit installieren
     - Nach Installation PATH ändern und Umgebungsvariablen ändern
@@ -33,7 +31,7 @@
       - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\```  
           ```${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
 
-3. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren
+3. **[cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren**
     - Konto anlegen oder login bei https://developer.nvidia.com/cudnn
     - Passende .deb-Dateien downloaden
       - cuDNN Runtime Library for Ubuntu20.04 x86_64 (Deb)
@@ -49,13 +47,13 @@
       - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH```
       - ```export PATH=/usr/local/cuda-11.4/bin:$PATH```
 
-    - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
+//    - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
     - ``` sudo cp cuda/include/cudnn*.h /usr/local/cuda/include```
     - ``` sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64```
     - ``` sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*```
-5. sudo apt install nvidia-cuda-toolkit
-6. Separates **cublas lib** Paket installieren und manuell zu installieren:
-  - entweder download:
+//5. sudo apt install nvidia-cuda-toolkit
+//6. Separates **cublas lib** Paket installieren und manuell zu installieren:
+//  - entweder download:
       - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/libcublas10_10.1.0.105-1_amd64.deb
       - ```sudo dpkg -i libcublas10_10.1.0.105-1_amd64.deb```
     - oder kopieren:
@@ -64,7 +62,12 @@
     - oder:
       - im Terminal: ```cd /``` um in ~/.bashrc zu kommen
       - ```export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
- 
+      
+4. **TensorFlow installieren**
+    - ```pip install tensorflow```
+      - bei dieser Fehlermeldung: ERROR launchpadlib 1.10.6 requires testresources which is not installed  
+        ```sudo apt install python3-testresources```
+    - ```pip install tensorflow-gpu``` 
 
 
 sudo apt-get purge nvidia-*
