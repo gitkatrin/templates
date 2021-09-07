@@ -49,8 +49,8 @@
       - ```sudo dpkg -i libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb```
       - ```sudo dpkg -i libcudnn8-samples_8.2.4.15-1+cuda11.4_amd64.deb```
     - Cuda path exportieren
-      - ```export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH```
-      - ```export PATH=/usr/local/cuda-10.0/bin:$PATH```
+      - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH```
+      - ```export PATH=/usr/local/cuda-11.4/bin:$PATH```
 
     - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
     - ``` sudo cp cuda/include/cudnn*.h /usr/local/cuda/include```
