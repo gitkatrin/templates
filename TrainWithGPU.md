@@ -37,6 +37,21 @@
           ```${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
 
 4. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren https://gist.github.com/matheustguimaraes/43e0b65aa534db4df2918f835b9b361d
+    - Konto anlegen oder login bei https://developer.nvidia.com/cudnn
+    - Passende .deb-Dateien downloaden
+      - cuDNN Runtime Library for Ubuntu20.04 x86_64 (Deb)
+      - cuDNN Developer Library for Ubuntu20.04 x86_64 (Deb)
+      - cuDNN Code Samples and User Guide for Ubuntu20.04 x86_64 (Deb) 
+    - in den Download Ordner navigieren
+      - ```cd Downloads```
+    - Pakete entpacken und installieren
+      - ```sudo dpkg -i libcudnn8_8.2.4.15-1+cuda11.4_amd64.deb```
+      - ```sudo dpkg -i libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb```
+      - ```sudo dpkg -i libcudnn8-samples_8.2.4.15-1+cuda11.4_amd64.deb```
+    - Cuda path exportieren
+      - ```export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH```
+      - ```export PATH=/usr/local/cuda-10.0/bin:$PATH```
+
     - ```tar -xzvf cudnn-10.1-linux-x64-v7.6.5.32.tgz```
     - ``` sudo cp cuda/include/cudnn*.h /usr/local/cuda/include```
     - ``` sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64```
