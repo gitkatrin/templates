@@ -4,6 +4,7 @@
 - [Kompatible Versionen: Tensorflow, Python, cuDNN, CUDA](https://www.tensorflow.org/install/source#tested_build_configurations)
 - [Kompatible Versionen: NVIDIA Treiber und CUDA Toolkit](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
 - [GPU Support (Tensorflow Anleitung)](https://www.tensorflow.org/install/gpu)
+- [Nützliche Anleitung mit Test](https://gist.github.com/matheustguimaraes/43e0b65aa534db4df2918f835b9b361d)
 
 ## Versionen abfragen
 - **Nvidia Treiber** (Version: 455.23.05) jetzt 455.45.01
@@ -19,16 +20,12 @@
 - **Python** (Version: 3.6.9)
   - ```python3 --version```
 
-
-
-
 # Ablauf
-1. [NVIDIA Treiber](https://www.nvidia.com/download/index.aspx?lang=en-us) installieren
-    - oder so: https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04
-      - ```sudo apt install nvidia-driver-455```
-      - ```sudo shutdown -r now```
-
-3. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
+1. NVIDIA Treiber installieren/aktivieren
+    - [installieren](https://www.nvidia.com/download/index.aspx?lang=en-us)
+    - aktivieren unter: Anwendungen & Aktualisierungen > Zusätzliche Treiber > NVIDIA driver metapackage nvidia-driver-470...
+ 
+2. [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) installieren
     - die .run Datei runterladen
     - Nvidia Driver nicht mit installieren
     - Nach Installation PATH ändern und Umgebungsvariablen ändern
@@ -36,7 +33,7 @@
       - ```export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\```  
           ```${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}```
 
-4. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren https://gist.github.com/matheustguimaraes/43e0b65aa534db4df2918f835b9b361d
+3. [cuDNN](https://developer.nvidia.com/rdp/cudnn-archive) installieren
     - Konto anlegen oder login bei https://developer.nvidia.com/cudnn
     - Passende .deb-Dateien downloaden
       - cuDNN Runtime Library for Ubuntu20.04 x86_64 (Deb)
