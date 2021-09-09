@@ -11,6 +11,11 @@
   - ```modinfo nvidia | grep "^version:" | sed 's/^version: *//;' ```
 - **CUDA** (Version: 11.4) brauche 10.1
   - ```nvidia-smi```  
+
+- **CuDNN**
+  - ```function lib_installed() { /sbin/ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep $1; }```
+  - ```function check() { lib_installed $1 && echo "$1 is installed" || echo "ERROR: $1 is NOT installed"; }```
+  - ```check libcudnn ```
 - **nvcc (Nvidia Toolkit)** (Version: V9.1.85)
   -  ```nvcc  --version```
 - **Tensorflow, Tensorflow-gpu** (Version: 2.3.1)
