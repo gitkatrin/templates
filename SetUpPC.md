@@ -13,6 +13,11 @@
 - Installieren: [hier](https://developer.nvidia.com/cuda-toolkit-archive) herunterladen und Anweisungen folgen (.run-Datei)
 - weitere Infos gibts [hier](https://github.com/gitkatrin/templates/blob/master/TrainWithGPU.md)
 
+**CuDNN Version anzeigen:**
+  - ```function lib_installed() { /sbin/ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep $1; }```
+  - ```function check() { lib_installed $1 && echo "$1 is installed" || echo "ERROR: $1 is NOT installed"; }```
+  - ```check libcudnn ```
+  
 **Pip:**
 - Version anzeigen: ```pip3 --version```
 - Installieren: ```python3 get-pip.py --user```
