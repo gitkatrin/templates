@@ -11,6 +11,7 @@
 **NVIDIA CuDa Toolkit:**
 - Version anzeigen: ```nvcc --version```
 - Installieren: [hier](https://developer.nvidia.com/cuda-toolkit-archive) herunterladen und Anweisungen folgen (.run-Datei)
+- weitere Infos gibts [hier](https://github.com/gitkatrin/templates/blob/master/TrainWithGPU.md)
 
 **Pip:**
 - Version anzeigen: ```pip3 --version```
