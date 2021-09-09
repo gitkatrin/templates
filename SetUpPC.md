@@ -21,4 +21,6 @@
 - Version anzeigen: ```pip list | grep tensorflow```
 - Installieren:
     - ```pip3 install tensorflow```
+        - bei dieser Fehlermeldung: ERROR launchpadlib 1.10.6 requires testresources which is not installed
+        - ```sudo apt install python3-testresources```
     - ```pip3 install tensorflow-gpu```
