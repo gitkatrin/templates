@@ -29,3 +29,9 @@
         - bei dieser Fehlermeldung: ERROR launchpadlib 1.10.6 requires testresources which is not installed
         - ```sudo apt install python3-testresources```
     - ```pip3 install tensorflow-gpu```
+
+**Matplot:**
+- Installieren: ```pip3 install matplotlib```
+
+**Sklearn:**
+- Installieren: ```pip3 install -U scikit-learn scipy matplotlib```
