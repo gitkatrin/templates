@@ -1,5 +1,9 @@
 
+https://www.cyber-neurones.org/2021/01/ubuntu-crash-de-update-manager/
+https://qastack.com.de/ubuntu/1104052/your-python3-install-is-corrupted
+https://blog.desdelinux.net/de/Ersetzen-Sie-Python-3-durch-Python-2-Linux/#Instalar_python_2con_sudo
 
+https://forum.ubuntuusers.de/topic/upgrade-klemmt-wegen-verknuepfung-von-python/ !!
 
 
 **NVIDIA Driver Version anzeigen:**
