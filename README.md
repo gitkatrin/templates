@@ -23,10 +23,15 @@ In this repository are some useful templates for python programming and some inf
   - [Write the pixel values of images in a folder into a csv file](https://github.com/gitkatrin/templates/blob/master/others/pixel_values_in_csv.py)
   - [Activate the OV580 camera](https://github.com/gitkatrin/templates/blob/master/others/OV580example.py)
 
-***
+---
 
 **Websites:**
 - [Plotting demos](https://academo.org/demos/)
 - [Free Stock Video Footage](https://www.videvo.net/)
 - [Free Stock Image Footage](https://www.istockphoto.com/de)
+
+---
+
+**Tutorials:**
+ - [OpenCV Tutorial](https://github.com/spmallick/learnopencv)
   
