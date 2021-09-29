@@ -29,7 +29,7 @@ In this repository are some useful templates for python programming and some inf
 - [Plotting demos](https://academo.org/demos/)
 - [Free Stock Video Footage](https://www.videvo.net/)
 - [Free Stock Image Footage](https://www.istockphoto.com/de)
-
+- [Create /etc/apt/sources.list](https://repogen.simplylinux.ch/)
 ---
 
 **Tutorials:**
