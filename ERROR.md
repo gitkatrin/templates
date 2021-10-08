@@ -1,6 +1,6 @@
 
 
-**1. Error:**  
+## 1. Error:
 Errors were encountered while processing:  
  /var/cache/apt/archives/libnvidia-gl-390_390.48-0ubuntu3_i386.deb  
  /var/cache/apt/archives/libnvidia-gl-390_390.48-0ubuntu3_amd64.deb  
@@ -33,3 +33,24 @@ E: Sub-process returned an error code```
       #    "if /usr/bin/test -w /var/lib/command-not-found/ -a -e /usr/lib/cnf-update-db; then /usr/lib/cnf-update-db > /dev/null; fi";
       #};```
     
+
+## Notes
+- https://blog.desdelinux.net/de/Ersetzen-Sie-Python-3-durch-Python-2-Linux/
+- https://qastack.com.de/programming/11068419/check-if-file-is-symlink-in-python
+- https://askubuntu.com/questions/448926/how-to-fix-python-installation-is-corrupted
+- https://qastack.com.de/ubuntu/448926/how-to-fix-python-installation-is-corrupted
+- https://www.cyberciti.biz/faq/upgrade-ubuntu-18-04-to-20-04-lts-using-command-line/
+- https://bugs.launchpad.net/ubuntu/+source/gnome-control-center/+bug/133130/comments/3
+- https://debianforum.de/forum/viewtopic.php?f=29&t=155566&sid=bcebe1cd39b5a451fd55c69a4c405650&start=15 !!
+- http://www.ubuntu-forum.de/artikel/55447/terminal-startet-nicht.html
+- https://forum.ubuntuusers.de/topic/aktualisierungsverwaltung-zeigt-auf-meinem-rec/
+- https://askubuntu.com/questions/1082881/software-updater-is-not-working-properly
+- https://itectec.com/ubuntu/ubuntu-software-updater-software-updates-not-working/
+- https://ubuntuhandbook.org/index.php/2020/06/gnome-software-as-ubuntu-software-ubuntu-20-04/
+- https://www.cyberciti.biz/faq/ubuntu-bash-do-release-upgrade-command-not-found/
+- https://forum.ubuntuusers.de/topic/systemeinstellungen-verschwunden/ !!!
+- https://askubuntu.com/questions/480908/problem-with-update-manager-no-module-named-apt-pkg-in-ubuntu-13-10-having-i
+- https://qastack.com.de/ubuntu/448926/how-to-fix-python-installation-is-corrupted
+- https://qastack.com.de/ubuntu/1104052/your-python3-install-is-corrupted !!
+- https://forum.ubuntuusers.de/topic/upgrade-klemmt-wegen-verknuepfung-von-python/ !!
+- https://www.cyber-neurones.org/2021/01/ubuntu-crash-de-update-manager/ !!!
