@@ -31,15 +31,18 @@ E: Sub-process returned an error code```
    -  ```cd /etc/apt/apt.conf.d/```
    -  ```sudo nano ./50command-not-found```
    -  Letzen Zeilen auskommentieren:
-      ```# Refresh AppStream cache when APT's cache is updated (i.e. apt update)  
+      ```
+      # Refresh AppStream cache when APT's cache is updated (i.e. apt update)  
       #APT::Update::Post-Invoke-Success {
       #    "if /usr/bin/test -w /var/lib/command-not-found/ -a -e /usr/lib/cnf-update-db; then /usr/lib/cnf-update-db > /dev/null; fi";
-      #};```
+      #};
+      ```
     
     
 ## 3. Error:
 - **Eingabe:** ```sudo apt upgrade```
-- **Ausgabe:**  
+- **Ausgabe:** 
+  ``` 
    ...  
    Fehler traten auf beim Bearbeiten von:  
      python3  
@@ -50,6 +53,7 @@ E: Sub-process returned an error code```
      python3-apport  
    Bearbeitung wurde angehalten, da zu viele Fehler auftraten.  
    E: Sub-process /usr/bin/dpkg returned an error code (1)
+   ```
 - **[Lösung](https://forum.ubuntuusers.de/topic/sub-process-usr-bin-dpkg-returned-an-error-cod-7/):**  
    - Aufräumen: ```sudo rm /var/crash/*```
    - Datei mit nano bearbeiten: ```sudo edit /etc/default/apport```
