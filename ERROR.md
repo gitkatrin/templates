@@ -13,7 +13,7 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 ## 2. Error:
 - **Eingabe:** ```sudo apt-get update && sudo apt-get dist-upgrade```
 - **Ausgabe:** ```OK:2 http://de.archive.ubuntu.com/ubuntu bionic InRelease                      
-OK:3 http://dl.google.com/linux/chrome/deb stable InRelease                    
+OK:3 http://dl.google.com/linux/chrome/deb stable InRelease                     
 OK:4 http://de.archive.ubuntu.com/ubuntu bionic-security InRelease             
 OK:5 http://de.archive.ubuntu.com/ubuntu bionic-updates InRelease              
 OK:6 http://de.archive.ubuntu.com/ubuntu bionic-proposed InRelease             
@@ -33,6 +33,19 @@ E: Sub-process returned an error code```
       #    "if /usr/bin/test -w /var/lib/command-not-found/ -a -e /usr/lib/cnf-update-db; then /usr/lib/cnf-update-db > /dev/null; fi";
       #};```
     
+    
+## 3. Error:
+- **Eingabe:** ```sudo apt upgrade```
+- **Ausgabe:** ```...            
+Fehler traten auf beim Bearbeiten von:            
+ python3            
+ python3-update-manager            
+ software-properties-kde            
+ apport-gtk            
+ ubuntu-release-upgrader-core            
+ python3-apport            
+Bearbeitung wurde angehalten, da zu viele Fehler auftraten.            
+E: Sub-process /usr/bin/dpkg returned an error code (1)```
 
 ## Notes
 - https://blog.desdelinux.net/de/Ersetzen-Sie-Python-3-durch-Python-2-Linux/
