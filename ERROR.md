@@ -54,3 +54,7 @@ E: Sub-process returned an error code```
 - https://qastack.com.de/ubuntu/1104052/your-python3-install-is-corrupted !!
 - https://forum.ubuntuusers.de/topic/upgrade-klemmt-wegen-verknuepfung-von-python/ !!
 - https://www.cyber-neurones.org/2021/01/ubuntu-crash-de-update-manager/ !!!
+
+
+
+- https://forum.ubuntuusers.de/topic/sub-process-usr-bin-dpkg-returned-an-error-cod-8/2/
