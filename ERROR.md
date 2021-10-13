@@ -36,15 +36,15 @@ E: Sub-process returned an error code```
     
 ## 3. Error:
 - **Eingabe:** ```sudo apt upgrade```
-- **Ausgabe:** ```...            
-Fehler traten auf beim Bearbeiten von:            
- python3            
- python3-update-manager            
- software-properties-kde            
- apport-gtk            
- ubuntu-release-upgrader-core            
- python3-apport            
-Bearbeitung wurde angehalten, da zu viele Fehler auftraten.            
+- **Ausgabe:** ```...  
+Fehler traten auf beim Bearbeiten von:  
+ python3  
+ python3-update-manager  
+ software-properties-kde  
+ apport-gtk  
+ ubuntu-release-upgrader-core  
+ python3-apport  
+Bearbeitung wurde angehalten, da zu viele Fehler auftraten.  
 E: Sub-process /usr/bin/dpkg returned an error code (1)```
 
 ## Notes
