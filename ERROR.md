@@ -1,6 +1,9 @@
+## Inhalt
+1. [Error: E: Sub-process /usr/bin/dpkg returned an error code (1)](https://github.com/gitkatrin/templates/blob/master/ERROR.md#1-error)
+2. [Error: E: Sub-process returned an error code](https://github.com/gitkatrin/templates/blob/master/ERROR.md#2-error)
+3. [Error: E: Sub-process /usr/bin/dpkg returned an error code (1)](https://github.com/gitkatrin/templates/blob/master/ERROR.md#3-error-e-sub-process-usrbindpkg-returned-an-error-code-1)
 
-
-## 1. Error:
+## 1. Error: E: Sub-process /usr/bin/dpkg returned an error code (1)
 - **Ausgabe:**
   ```
   Errors were encountered while processing:  
@@ -13,7 +16,7 @@
       - ```sudo apt --fix-broken install```
     
     
-## 2. Error:
+## 2. Error: E: Sub-process returned an error code
 - **Eingabe:** ```sudo apt-get update && sudo apt-get dist-upgrade```
 - **Ausgabe:** 
   ```
@@ -40,7 +43,6 @@
       #    "if /usr/bin/test -w /var/lib/command-not-found/ -a -e /usr/lib/cnf-update-db; then /usr/lib/cnf-update-db > /dev/null; fi";
       #};
       ```
-    
     
 ## 3. Error: E: Sub-process /usr/bin/dpkg returned an error code (1)
 - **Eingabe:** ```sudo apt upgrade```
