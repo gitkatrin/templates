@@ -36,16 +36,33 @@ E: Sub-process returned an error code```
     
 ## 3. Error:
 - **Eingabe:** ```sudo apt upgrade```
-- **Ausgabe:** ```...  
-Fehler traten auf beim Bearbeiten von:  
- python3  
- python3-update-manager  
- software-properties-kde  
- apport-gtk  
- ubuntu-release-upgrader-core  
- python3-apport  
-Bearbeitung wurde angehalten, da zu viele Fehler auftraten.  
-E: Sub-process /usr/bin/dpkg returned an error code (1)```
+- **Ausgabe:**  
+   ...  
+   Fehler traten auf beim Bearbeiten von:  
+     python3  
+     python3-update-manager  
+     software-properties-kde  
+     apport-gtk  
+     ubuntu-release-upgrader-core  
+     python3-apport  
+   Bearbeitung wurde angehalten, da zu viele Fehler auftraten.  
+   E: Sub-process /usr/bin/dpkg returned an error code (1)
+- **[Lösung](https://forum.ubuntuusers.de/topic/sub-process-usr-bin-dpkg-returned-an-error-cod-7/):**  
+   - Aufräumen: ```sudo rm /var/crash/*```
+   - Datei mit nano bearbeiten: ```sudo edit /etc/default/apport```
+   - Wert 1 auf 0 setzten:
+   ```
+    # set this to 0 to disable apport, or to 1 to enable it  
+    # you can temporarily override this with  
+    # sudo service apport start force_start=1  
+    enabled=0
+    ```
+    - ```sudo sed -i s,//de.archive,//archive,g  /etc/apt/sources.list```
+    - ```sudo apt update && sudo apt install --reinstall hplip-data```
+    - wenn die vorherigen beiden Schritte nicht gehen:
+      - ```wget -c http://mirrors.kernel.org/ubuntu/pool/main/h/hplip/hplip-data_3.17.10+repack0-5_all.deb```
+      - ```sudo dpkg -i hplip-data_3.17.10+repack0-5_all.deb```
+
 
 ## Notes
 - https://blog.desdelinux.net/de/Ersetzen-Sie-Python-3-durch-Python-2-Linux/
