@@ -2,6 +2,7 @@
 1. [Error: E: Sub-process /usr/bin/dpkg returned an error code (1)](https://github.com/gitkatrin/templates/blob/master/ERROR.md#1-error)
 2. [Error: E: Sub-process returned an error code](https://github.com/gitkatrin/templates/blob/master/ERROR.md#2-error)
 3. [Error: E: Sub-process /usr/bin/dpkg returned an error code (1)](https://github.com/gitkatrin/templates/blob/master/ERROR.md#3-error-e-sub-process-usrbindpkg-returned-an-error-code-1)
+4. [Error: PermissionError: [Errno 13] Permission denied: '/home/bhtcsuperuser/.local/share/jupyter/runtime/kernel𔂱fe23b590749.json']()
 
 ## 1. Error: E: Sub-process /usr/bin/dpkg returned an error code (1)
 - **Ausgabe:**
@@ -75,6 +76,18 @@
       - ```wget -c http://mirrors.kernel.org/ubuntu/pool/main/h/hplip/hplip-data_3.17.10+repack0-5_all.deb```
       - ```sudo dpkg -i hplip-data_3.17.10+repack0-5_all.deb```
 
+
+## 4. Error: PermissionError: [Errno 13] Permission denied: '/home/bhtcsuperuser/.local/share/jupyter/runtime/kernel𔂱fe23b590749.json'
+- **Eingabe:**
+  - Spyder öffnen 
+- **Ausgabe:**
+  - in Spyder Terminal:
+    - ```Traceback (most recent call last): File "/usr/local/lib/python3.8/dist‑packages/spyder/plugins/ipythonconsole/plugin.py", line 1568, in create_kernel_manager_and_kernel_client kernel_manager.start_kernel(stderr=stderr_handle, File "/usr/lib/python3/dist‑packages/jupyter_client/manager.py", line 301, in start_kernel kernel_cmd, kw = self.pre_start_kernel(**kw) File "/usr/lib/python3/dist‑packages/jupyter_client/manager.py", line 248, in pre_start_kernel self.write_connection_file() File "/usr/lib/python3/dist‑packages/jupyter_client/connect.py", line 468, in write_connection_file self.connection_file, cfg = write_connection_file(self.connection_file, File "/usr/lib/python3/dist‑packages/jupyter_client/connect.py", line 138, in write_connection_file with secure_write(fname) as f: File "/usr/lib/python3.8/contextlib.py", line 113, in __enter__ return next(self.gen) File "/usr/lib/python3/dist‑packages/jupyter_core/paths.py", line 437, in secure_write with os.fdopen(os.open(fname, open_flag, 0o0600), mode) as f: PermissionError: [Errno 13] Permission denied: '/home/bhtcsuperuser/.local/share/jupyter/runtime/kernel𔂱fe23b590749.json' ```
+  - im Ubuntu Terminal:
+    - ```Cannot create directory /home/bhtcsuperuser/.local/share/Spyder/QtWebEngine/Default. Error: FILE_ERROR_ACCESS_DENIED.```  
+- **[Lösung](https://stackoverflow.com/questions/46272880/cannot-open-new-jupyter-notebook-permission-denied)**
+  - ```sudo chown -R user:user ~/.local/share/jupyter```
+  - The first user before the colon is your username, the second user after the colon is your group. If you get chown: [user]: illegal group name, find your group with groups, or specify no group with sudo chown user: ~/.local/share/jupyter.
 
 ## Notes
 - https://blog.desdelinux.net/de/Ersetzen-Sie-Python-3-durch-Python-2-Linux/
