@@ -1,8 +1,10 @@
-## Inhalt
+# Inhalt
 1. [Error: E: Sub-process /usr/bin/dpkg returned an error code (1)](https://github.com/gitkatrin/templates/blob/master/ERROR.md#1-error)
 2. [Error: E: Sub-process returned an error code](https://github.com/gitkatrin/templates/blob/master/ERROR.md#2-error)
 3. [Error: E: Sub-process /usr/bin/dpkg returned an error code (1)](https://github.com/gitkatrin/templates/blob/master/ERROR.md#3-error-e-sub-process-usrbindpkg-returned-an-error-code-1)
 4. [Error: PermissionError: [Errno 13] Permission denied: '/home/bhtcsuperuser/.local/share/jupyter/runtime/kernel𔂱fe23b590749.json'](https://github.com/gitkatrin/templates/blob/master/ERROR.md#4-error-permissionerror-errno-13-permission-denied-homebhtcsuperuserlocalsharejupyterruntimekernelfe23b590749json)
+
+***
 
 ## 1. Error: E: Sub-process /usr/bin/dpkg returned an error code (1)
 - **Ausgabe:**
