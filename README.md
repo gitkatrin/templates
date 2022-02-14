@@ -34,4 +34,9 @@ In this repository are some useful templates for python programming and some inf
 
 **Tutorials:**
  - [OpenCV Tutorial](https://github.com/spmallick/learnopencv)
-  
+ - [ROC AUC SCORE for Multi Class Classification sklearn](https://www.youtube.com/watch?v=ZlGz9Nl5irs)
+ - [How to Plot an ROC Curve in Python | Machine Learning in Python](https://www.youtube.com/watch?v=uVJXPPrWRJ0)
+ - [Performance measure on multiclass classification (accuracy, f1 score, precision, recall)](https://www.youtube.com/watch?v=HBi-P5j0Kec)
+ - [Multiclass Classification Model Evaluation](https://parasite.id/blog/2018-12-13-model-evaluation/)
+ - [Confusion Matrix for Your Multi-Class Machine Learning Model](https://towardsdatascience.com/confusion-matrix-for-your-multi-class-machine-learning-model-ff9aa3bf7826)
+ - 
