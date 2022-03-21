@@ -30,6 +30,7 @@ In this repository are some useful templates for python programming and some inf
 - [Free Stock Video Footage](https://www.videvo.net/)
 - [Free Stock Image Footage](https://www.istockphoto.com/de)
 - [Create /etc/apt/sources.list](https://repogen.simplylinux.ch/)
+- [Netron: Viewer for neural network, deep learning, and machine learning models](https://netron.app/)
 ---
 
 **Tutorials:**
