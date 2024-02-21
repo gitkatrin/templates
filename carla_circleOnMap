@@ -130,3 +130,36 @@ input("Drücken Sie Enter, um das Programm zu beenden...")
 # Kreis-Actor zerstören
 circle_actor.destroy()
 
+----
+
+import carla
+
+# Verbindung zum CARLA-Server herstellen
+client = carla.Client('localhost', 2000)
+client.set_timeout(5.0)
+
+# Weltobjekt abrufen
+world = client.get_world()
+
+# Zentrum und Radius des Kreises festlegen
+circle_center = carla.Location(x=100.0, y=200.0, z=0.1)  # Koordinaten anpassen
+circle_radius = 10.0  # Radius anpassen
+
+# Farbe des Kreises festlegen (Rot: RGB - 255, 0, 0)
+circle_color = carla.Color(255, 0, 0)
+
+# Dauer der Anzeige des Kreises festlegen (in Sekunden)
+display_duration = 10.0  # Anpassen, wie lange der Kreis sichtbar sein soll
+
+# Kreis auf den Boden zeichnen
+world.debug.draw_debug_circle(
+    circle_center,
+    circle_radius,
+    circle_color,
+    life_time=display_duration,
+    thickness=0.1  # Dicke der Kreislinie anpassen
+)
+
+# Warten, um den Kreis zu sehen (optional)
+input("Drücken Sie Enter, um das Programm zu beenden...")
+
