@@ -15,32 +15,31 @@
     
 ## 4. Anwendung der vorgeschlagenen Änderungen auf https://stackoverflow.com/questions/37193356/registering-net-com-dlls-without-admin-rights-regasm
  - **4.1 Prüfe, ob die Datei CodeBase-Einträge enthält**
-	- Öffne die .reg-Datei mit einem Texteditor (z. B. Notepad++).
-      	- Suche nach ```CodeBase```
-       	- Beispiel: ```"CodeBase"="file:///C:/Pfad/zu/deiner/DLL/MULTIC.Tooling.Industrial.dll"```
+   - Öffne die .reg-Datei mit einem Texteditor (z. B. Notepad++).
+   - Suche nach ```CodeBase``` → Beispiel: ```"CodeBase"="file:///C:/Pfad/zu/deiner/DLL/MULTIC.Tooling.Industrial.dll"```
       
- -  **4.2 Prüfe, ob dein Interface registriert wurde**
-     	-  Suche nach ```MTI.MTI_AddInInterface``` in der Datei.
-      	-  Beispiel: 
+ - **4.2 Prüfe, ob dein Interface registriert wurde**
+    - Suche nach ```MTI.MTI_AddInInterface``` in der Datei.
+    - Beispiel: 
 		```
 		[HKEY_CLASSES_ROOT\MTI.MTI_AddInInterface]
 		@="MTI.MTI_AddInInterface"
 		```
      	- Wenn es fehlt: → Wahrscheinlich ist „Assembly COM sichtbar machen“ nicht gesetzt (siehe Schritt [1.1]).
  - **4.3 Suchen & Ersetze ```HKEY_CLASSES_ROOT``` mit ```HKEY_CURRENT_USER\Software\Classes```**
-	- → Dadurch werden die Einträge nur für deinen Benutzer registriert – keine Adminrechte nötig!
+   - → Dadurch werden die Einträge nur für deinen Benutzer registriert – keine Adminrechte nötig!
     
  - **4.4 Erstelle eine Kopie der Registry-Datei**
-      	- Speichere sie z. B. als Addin_copy.reg
-	- Sie wird für die nächsten Schritte benötigt.
+   - Speichere sie z. B. als Addin_copy.reg. Sie wird für die nächsten Schritte benötigt.
        
  - **4.5 Aus der Kopie ALLES löschen, was NICHT „\CLSID\“ enthält**
-      	- In Addin_copy.reg: Lösche alle Blöcke und Einträge, die nicht „\CLSID\“ im Pfad enthalten.
+   - In Addin_copy.reg: Lösche alle Blöcke und Einträge, die nicht „\CLSID\“ im Pfad enthalten.
     
  - **4.6 In der Kopie „Classes\CLSID“ suchen und durch „Classes\Wow6432Node\CLSID“ ersetzen**
-      	- → Das ist notwendig für 32-Bit COM-Kompatibilität, da Enterprise Architect 32-Bit ist.
+   - → Das ist notwendig für 32-Bit COM-Kompatibilität, da Enterprise Architect 32-Bit ist.
     
  - **4.7 Kopiere alle Registry-Blöcke aus Addin_copy.reg (jetzt nur Wow6432Node\CLSID-Einträge) unten an die Originaldatei dran.**
+ - **4.8 (Aus der stack overflow Anleitung) Entfernen Sie die Registrierungseinträge ```HKLM``` mithilfe von regasm: ```Regasm YourDLL.dll /unregister```**
 
 ## 5. (Optional) Lösche die Kopie der .reg-Datei.
 
