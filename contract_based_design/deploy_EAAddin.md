@@ -53,10 +53,10 @@
 	- ```Win + R``` drücken → Eingeben: regedit → Enter
 	- Du brauchst keine Adminrechte, da du mit HKEY_CURRENT_USER arbeitest
  - **7.2 Zu EA-AddIns-Zweig navigieren**
- 	- Pfad: ```HKEY_CURRENT_USER\SOFTWARE\Sparx Systems\EAAddins```
-  	- Wenn EAAddins noch nicht existiert: Rechtsklick auf "Sparx Systems" → Neu > Schlüssel → nenne ihn "EAAddins"
+ 	- Pfad: ```HKEY_CURRENT_USER\SOFTWARE\Sparx Systems\EAAddins64```
+  	- Wenn EAAddins noch nicht existiert: Rechtsklick auf "Sparx Systems" → Neu > Schlüssel → nenne ihn "EAAddins64"
  - **7.3 dd-In-Schlüssel erstellen**
-	- Rechtsklick auf "EAAddins" → Neu > "Zeichenfolgenwert"
+	- Rechtsklick auf "EAAddins64" → Neu > "Zeichenfolgenwert"
 	- Name:```MULTIC-Tooling```
  	- Wert: ```MTI.MTI_AddInInterface``` → der Wert muss exakt der Name deiner COM-Klasse sein
   - **7.4 Regedit schließen**
